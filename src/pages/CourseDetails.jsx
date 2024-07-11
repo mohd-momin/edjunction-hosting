@@ -156,7 +156,7 @@ function CourseDetails() {
               </div>
               <div>
                 <p className="">
-                  Created By {`${instructor.firstName} ${instructor.lastName}`}
+                Created By {instructor ? `${instructor.firstName} ${instructor.lastName}` : 'Unknown'}
                 </p>
               </div>
               <div className="flex flex-wrap gap-5 text-lg">
